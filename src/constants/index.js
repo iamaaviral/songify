@@ -40,6 +40,34 @@ const songs = [
         fileName: "song4.mp3",
         image: song4,
       },
+      {
+        id: 3,
+        name: " Stereo Love",
+        artist: "Edward Maya, Vika Jigulina",
+        album: " The Stereo Love Show",
+        duration: "4:08",
+        fileName: "song4.mp3",
+        image: song4,
+      },
+      {
+        id: 3,
+        name: " Stereo Love",
+        artist: "Edward Maya, Vika Jigulina",
+        album: " The Stereo Love Show",
+        duration: "4:08",
+        fileName: "song4.mp3",
+        image: song4,
+      },
+      {
+        id: 3,
+        name: " Stereo Love",
+        artist: "Edward Maya, Vika Jigulina",
+        album: " The Stereo Love Show",
+        duration: "4:08",
+        fileName: "song4.mp3",
+        image: song4,
+      },
+    
 ]
 
 export default songs
