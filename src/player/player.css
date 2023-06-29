@@ -1,115 +1,128 @@
 .player-wrapper {
-    background-color: #000;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    margin-top: 20px;
-    box-shadow: 0px -5px 15px 5px rgba(0,0,0,0.3);
-    padding: 0 16px;
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  margin-top: 20px;
+  box-shadow: 0px -5px 15px 5px rgba(0, 0, 0, 0.3);
+  padding: 0 16px;
 }
 
 .now-playing {
-    min-width: 180px;
-    width: 30%;
-    height: 100%;
-    display: flex;
-    align-items: center;
+  min-width: 180px;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
   gap: 8px;
 
-    justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .songImage {
-    flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .songImage img {
-    display: block; /* Remove extra space below the image */
-    border-radius: 4px; /* Make the image circular */
+  display: block; /* Remove extra space below the image */
+  border-radius: 4px; /* Make the image circular */
 }
 .artist {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-    overflow: hidden;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  overflow: hidden;
 }
 
-.artist .artist-name , .artist .artist-song-name{
-    max-width: 100%;
-    margin: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    font-size: 14px;
+.artist .artist-name,
+.artist .artist-song-name {
+  max-width: 100%;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
 }
 
 .controls {
-        display: flex;
-        flex-direction: column;
-        align-items:  center ;
-        justify-content: center;
-        gap: 8px;
-        min-width: 600px;
-        width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 600px;
+  width: 40%;
 }
 
-
 .player-buttons {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 }
 
 .control-buttons {
-    background-color: inherit;
-    border: none;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
+  background-color: inherit;
+  border: none;
+  color: white;
+  opacity: 0.8;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.control-buttons:hover {
+  opacity: 1;
+}
+
+.shuffle, .loop {
+  color: var(--active-btn-color);
 }
 
 .progress-wrapper {
-    position:relative;
-    margin-top: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    gap: 8px;
+  position: relative;
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
 }
 
-
 .progress-wrapper span {
-    color: #959595;
+  color: #959595;
 }
 
 .player-progress {
-    height: 12px;
-    width: 100%;
-    background-color: #3d3d3d;
-    border-radius: 4px;
-    margin-right: 6px;
-    margin-left: 6px;
+  height: 12px;
+  width: 100%;
+  background-color: #3d3d3d;
+  border-radius: 4px;
+  margin-right: 6px;
+  margin-left: 6px;
 }
 
-#progress-filled {
-    background-color: #fff;
-    height: 8px;
-    border-radius: 4px;
-    width: 0;
-
+.progress-filled {
+  background-color: var(--active-btn-color);
+  height: 12px;
+  border-radius: 4px;
+  width: 0;
+  transition: width 0.1s ease-in-out;
 }
 
-.volume-controls {
-    display: flex;
-    align-items:  center ;
-    justify-content: center;
-    gap: 8px;
-    min-width: 180px;
-    width: 30%;
+.volume-controls-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 180px;
+  width: 30%;
+  height: 100%;
+}
+
+.volume-controls-icon, .volume-controls-level {
+  cursor: pointer;
 }

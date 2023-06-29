@@ -3,6 +3,12 @@ import song2 from '../assets/song2.jpg';
 import song3 from '../assets/song3.jpg';
 import song4 from '../assets/song4.jpg';
 
+import songAudio1 from '../songs/song0.mp3';
+import songAudio2 from '../songs/song1.mp3';
+import songAudio3 from '../songs/song2.mp3';
+import songAudio4 from '../songs/song3.mp3';
+
+
 const songs = [
     {
         id: 0,
@@ -10,7 +16,7 @@ const songs = [
         artist: " Rihanna, Eminem",
         album: " Loud",
         duration: "4:51",
-        fileName: "song1.mp3",
+        fileName: songAudio1,
         image: song1,
       },
       {
@@ -19,7 +25,7 @@ const songs = [
         artist: " Ed Sheeran",
         album: " ÷",
         duration: "3:53",
-        fileName: "song2.mp3",
+        fileName: songAudio2,
         image: song2,
       },
       {
@@ -28,7 +34,7 @@ const songs = [
         artist: " Enrique Iglesias",
         album: "Sex and Love",
         duration: "2:50",
-        fileName: "song3.mp3",
+        fileName: songAudio3,
         image: song3,
       },
       {
@@ -37,34 +43,34 @@ const songs = [
         artist: "Edward Maya, Vika Jigulina",
         album: " The Stereo Love Show",
         duration: "4:08",
-        fileName: "song4.mp3",
+        fileName: songAudio4,
         image: song4,
       },
       {
-        id: 3,
+        id: 4,
         name: " Stereo Love",
         artist: "Edward Maya, Vika Jigulina",
         album: " The Stereo Love Show",
         duration: "4:08",
-        fileName: "song4.mp3",
+        fileName: songAudio4,
         image: song4,
       },
       {
-        id: 3,
+        id: 5,
         name: " Stereo Love",
         artist: "Edward Maya, Vika Jigulina",
         album: " The Stereo Love Show",
         duration: "4:08",
-        fileName: "song4.mp3",
+        fileName: songAudio4,
         image: song4,
       },
       {
-        id: 3,
+        id: 6,
         name: " Stereo Love",
         artist: "Edward Maya, Vika Jigulina",
         album: " The Stereo Love Show",
         duration: "4:08",
-        fileName: "song4.mp3",
+        fileName: songAudio4,
         image: song4,
       },
     
