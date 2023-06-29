@@ -46,33 +46,6 @@ const songs = [
         fileName: songAudio4,
         image: song4,
       },
-      {
-        id: 4,
-        name: " Stereo Love",
-        artist: "Edward Maya, Vika Jigulina",
-        album: " The Stereo Love Show",
-        duration: "4:08",
-        fileName: songAudio4,
-        image: song4,
-      },
-      {
-        id: 5,
-        name: " Stereo Love",
-        artist: "Edward Maya, Vika Jigulina",
-        album: " The Stereo Love Show",
-        duration: "4:08",
-        fileName: songAudio4,
-        image: song4,
-      },
-      {
-        id: 6,
-        name: " Stereo Love",
-        artist: "Edward Maya, Vika Jigulina",
-        album: " The Stereo Love Show",
-        duration: "4:08",
-        fileName: songAudio4,
-        image: song4,
-      },
     
 ]
 

@@ -1,12 +1,12 @@
 import "./songsList.css";
 
-const SongsList = ({songs, setCurrentSongIndex}) => {
+const SongsList = ({songs,currentSongIndex, setCurrentSongIndex}) => {
   return (
     <div className="songsListContainer">
     <div className="songsListWrapper">
       {songs.map((s) => {
         return (
-          <div className="each-song" key={s.id} onClick={() => setCurrentSongIndex(s.id)}>
+          <div className={`each-song ${s.id === currentSongIndex ? 'currently-playing' : ''}`} key={s.id} onClick={() => setCurrentSongIndex(s.id)}>
             <div className="img-wrapper">
                 <img src={s.image} alt="song-img" />
             </div>

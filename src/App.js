@@ -12,7 +12,7 @@ function App() {
 
   const audioRef = useRef()
 
-  const [currentSongIndex, setCurrentSongIndex] = useState(2);
+  const [currentSongIndex, setCurrentSongIndex] = useState(0);
   const [isPause, setIsPause] = useState(false);
   const [willLoop, setWillLoop] = useState(false);
   const [willShuffle, setWillShuffle] = useState(false);
@@ -131,7 +131,7 @@ function App() {
         onEnded={handleSongEnded}
         ref={audioRef}
       />
-      <SongsList songs={allSongs} setCurrentSongIndex={setCurrentSongIndex}/>
+      <SongsList songs={allSongs} setCurrentSongIndex={setCurrentSongIndex} currentSongIndex={currentSongIndex}/>
       <Player
         currentSongIndex={currentSongIndex}
         nextSong={nextSong}

@@ -54,8 +54,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  min-width: 600px;
-  width: 40%;
+  flex: 1;
 }
 
 .player-buttons {
@@ -78,7 +77,8 @@
   opacity: 1;
 }
 
-.shuffle, .loop {
+.shuffle,
+.loop {
   color: var(--active-btn-color);
 }
 
@@ -113,7 +113,7 @@
   transition: width 0.1s ease-in-out;
 }
 
-.volume-controls-wrapper{
+.volume-controls-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,6 +123,20 @@
   height: 100%;
 }
 
-.volume-controls-icon, .volume-controls-level {
+.volume-controls-icon,
+.volume-controls-level {
   cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  .now-playing {
+    display: none;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .volume-controls-wrapper {
+    display: none;
+  }
 }
